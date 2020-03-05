@@ -1,0 +1,502 @@
+/********************************************* NEW*************************** */
+.PdColorPalette h4{ font-weight: 700}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ****************************************************** */
+  
+  /* Typography Stories */
+  /* .Headings{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  } */
+  .TypoTitle h1, h2, h3, h4, h5, h6{
+    margin: 0;
+  }
+  .TitleStyle hr{
+    border-color: red;
+    margin: 0;
+  }
+  .TypoTitle{
+    padding-bottom: 20px;
+  }
+  
+  /* ****************************************************** */
+  
+  /* Form Stories */
+  .btn-add{
+    background-color: #0077EE;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 3px 8px;
+  }
+  .inputTxtHeading{
+    color: #666666;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding-top: 30px;
+  }
+  .InputSm{
+    width: 170px;
+    height: 25px;
+  }
+  .btn-sm{
+    padding: 2px 8px !important;
+  }
+  .Submit-btn{
+    width: 260px;
+      background: #0077ee;
+      color: #fff;
+      outline: none;
+      border: none;
+      height: 35px;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 14px;
+  
+  }
+  textarea{
+    width: 260px;
+  }
+  #password{
+    padding: 10px;
+  }
+  .ChooseOpt{
+    padding: 5px 8px;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  } */
+  
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 19px;
+    width: 19px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+       top: 5px;
+      left: 5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: white;
+  }
+  .CkeckmarkTxt{
+    padding-left: 15px;
+    padding-bottom: 10px
+  }
+  .CheckboxContainer .checkBoxMark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .CheckboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .CheckboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkBoxMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .CheckboxContainer:hover input ~ .checkBoxMark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .CheckboxContainer input:checked ~ .checkBoxMark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkBoxMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .CheckboxContainer input:checked ~ .checkBoxMark:after {
+    display: block;
+  }
+  /* *********************************************** */
+  
+  /* Color Stories */
+  .bgPalette{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* margin: auto; */
+  }
+  .PdColorPalette{
+    padding-top: 30px;
+  }
+  .colorPaletteOrange{
+    background-color: #EE3322;
+    border: 1px solid #EE3322;
+  }
+  .colorPaletteRedLighter{
+    background-color: #FEEBE9;
+    border: 1px solid #FEEBE9;
+  }
+  .colorPaletteBlue{
+    background-color: #0F65EF;
+    border: 1px solid #0F65EF;
+  }
+  .colorPaletteYellow{
+    background-color: #FFEE00;
+    border: 1px solid #FFEE00;
+  }
+  .colorPaletteYellowLight{
+    background-color: #FFFAB6;
+    border: 1px solid #FFFAB6;
+  }
+  .colorPaletteRed{
+    background-color: #F47F16;
+    border: 1px solid #F47F16;
+  }
+  .colorPaletteGreen{
+    background-color: #68AF15;
+    border: 1px solid #68AF15;
+  }
+  .colorPaletteGreenLighter{
+    background-color: #E1EFD0;
+    border: 1px solid #E1EFD0;
+  }
+  .colorPalettePink{
+    background-color: #F43192;
+    border: 1px solid #F43192;
+  }
+  .colorPaletteGrayLight{
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+  }
+  .colorPaletteGray{
+    background-color: #AAAAAA;
+    border: 1px solid #AAAAAA;
+  }
+  .colorPaletteGrayDark{
+    background-color: #222222 ;
+    border: 1px solid #222222 ;
+  }
+  .colorPaletteWhite{
+    background-color: #fff ;
+    border: 1px solid #fff ;
+  }
+  .colorPaletteProOrange{
+    background-color: #F7AD19 ;
+    border: 1px solid #F7AD19 ;
+  }
+  .colorPalettePurple{
+    background-color: #6645DD ;
+    border: 1px solid #6645DD ;
+  }
+  .colorPaletteTeal{
+    background-color: #0DCCB0 ;
+    border: 1px solid #0DCCB0 ;
+  }
+  
+  
+  /* Social Colors */
+  
+  .colorPaletteFacebook{
+    background-color: #3B5998 ;
+    border: 1px solid #3B5998 ;
+  }
+  .colorPaletteTwitter{
+    background-color: #55ACEE ;
+    border: 1px solid #55ACEE ;
+  }
+  .colorPaletteGoogle{
+    background-color: #DD4B39 ;
+    border: 1px solid #DD4B39 ;
+  }
+  .colorPaletteLinkedIn{
+    background-color: #0077B5 ;
+    border: 1px solid #0077B5 ;
+  }
+  .colorPalettePinterest{
+    background-color: #BD081C ;
+    border: 1px solid #BD081C ;
+  }
+  .colorPaletteTumbler{
+    background-color: #36465D ;
+    border: 1px solid #36465D ;
+  }
+  .colorPaletteYoutube{
+    background-color: #CD201F ;
+    border: 1px solid #CD201F ;
+  }
+  .colorPaletteInstagram{
+    background-color: #517FA4 ;
+    border: 1px solid #517FA4 ;
+  }
+  .PaletteTxt{
+    color: #999;
+    font-size: 16px;
+  }
+  
+  /* Text Colors */
+  
+  .TextColor p{
+    font-size: 16px;
+    color: #999999;
+  }
+  .TextDesc{
+    min-height: 66px;
+  }
+  .TextDesc p{
+    font-weight: bold;
+  }
+  .TextDesc:nth-child(1){
+    color: #333333;
+  }
+  .TextDesc:nth-child(2){
+    color: #666666;
+  }
+  .TextDesc:nth-child(3n+0){
+    color: #EE3322 ;
+  }
+  .TextDesc:nth-child(4){
+    color: #F43192 ;
+  }
+  .TextDesc:nth-child(5){
+    color: #F47F16 ;
+  }
+  .TextDesc:nth-child(6){
+    color: #F7AD19 ;
+  }
+  .TextDesc:nth-child(7){
+    color: #68AF15 ;
+  }
+  .TextDesc:nth-child(8){
+    color: #0F65EF ;
+  }
+  .TextDesc:nth-child(9){
+    color: #6645DD ;
+  }
+  
+  /* svg colors */
+  
+  .svgColor{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  .svgTxt{
+    min-height: 50px;
+    height: 50px;;
+  }
+  .svgColors{
+    padding: 10px 0;
+  }
+  .svgTxt p{
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .svgGrayColor{
+    background: #333333;
+  }
+  .svgLtGrayColor{
+    background: #666666;
+  }
+  .svgLitGrayColor{
+    background: #999999;
+  }
+  .svgRedColor{
+    background: #EE3322;
+  }
+  .svgPinkColor{
+    background: #F43192;
+  }
+  .svgOrangeColor{
+    background: #F47F16;
+  }
+  .svgBlueColor{
+    background: #0F65EF;
+  }
+  .svgPurpleColor{
+    background: #6645DD;
+  }
+  .svgGreenColor{
+    background: #68AF15;
+  }
+  .svgTealColor{
+    background: #0DCCB0;
+  }
+  .svgWhiteColor{
+    background: #fff;
+    border: 2px solid #000;
+  }
+  .svgLogo img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  /* Button css */
+  .btn-large{
+    width: 78px;
+      height: 42px;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      margin-right: 50px;
+  }
+  .btn-small{
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      width: 60px;
+      height: 32px;
+  }
+  .secondary-btn{
+    background: transparent;
+      border: 1px solid #007bff;
+      color: #007bff;
+      font-weight: 700;
+  }
+  .btn-group{
+    padding-top: 50px;
+  }
+  button:disabled {
+    color: -internal-light-dark-color(graytext, rgb(38, 50, 219));
+  }
+  .Negative-btns01, .Negative-btns02{
+    display: inline-block;
+    padding-right: 20%;
+    
+  }
+  .pd-50{
+    padding-top: 50px;
+  }
+  .negative-btn{
+  
+      background: #EE3322;
+      color: #fff;
+      font-weight: 500;
+      margin-right: 31px;
+  }
+  .negative-sm{
+    border: 1px solid #EE3322;
+      background: transparent;
+      font-weight: 500;
+  }
+  .tag:not(body) {
+  background-color: inherit;
+}
